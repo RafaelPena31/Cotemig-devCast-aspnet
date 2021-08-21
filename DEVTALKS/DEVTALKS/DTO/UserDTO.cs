@@ -1,17 +1,18 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
 namespace DEVTALKS.DTO
 {
-    public class UserDTO {
-      private string name, email, id, password;
-      private int isAdmin, isCC, isPremium;
+    public class UserDTO
+    {
+        private string name, email, id, password;
+        private int isAdmin, isCC, isPremium;
 
-      public string Id { get => id; set => id = value; }
+        public string Id { get => id; set => id = value; }
 
-      public string Name
+        public string Name
         {
             set
             {
@@ -27,7 +28,7 @@ namespace DEVTALKS.DTO
             get { return this.name; }
         }
 
-     public string Password
+        public string Password
         {
             set
             {
@@ -43,7 +44,7 @@ namespace DEVTALKS.DTO
             get { return this.password; }
         }
 
-     public string Email
+        public string Email
         {
             set
             {
@@ -75,7 +76,7 @@ namespace DEVTALKS.DTO
             get { return this.isCC; }
         }
 
-     public int IsAdmin
+        public int IsAdmin
         {
             set
             {
@@ -91,7 +92,7 @@ namespace DEVTALKS.DTO
             get { return this.isAdmin; }
         }
 
-     public int IsPremium
+        public int IsPremium
         {
             set
             {

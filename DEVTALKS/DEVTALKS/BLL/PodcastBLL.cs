@@ -76,5 +76,11 @@ namespace DEVTALKS.BLL
             string sql = string.Format($@"DELETE FROM Podcast WHERE id = '{id}';");
             connection.ExecutionSQL(sql);
         }
+
+        public void UpdateTheme(string theme, int id)
+        {
+            string sql = string.Format($@"UPDATE Podcast SET theme='{theme}' WHERE id = '{id}';");
+            connection.ExecutionSQL(sql);
+        }
     }
 }
