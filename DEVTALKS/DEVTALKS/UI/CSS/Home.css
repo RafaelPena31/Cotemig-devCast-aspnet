@@ -51,7 +51,7 @@ body {
     align-items: center
 }
 
-    .main-container .input {
+    .input {
         width: 50%;
         border: 1px solid #C9CED6;
         margin-top: 40px;
@@ -67,7 +67,7 @@ body {
     color: #C9CED6
 }
 
-.main-container .subtitle {
+.subtitle {
     color: #3A3D7A;
     font-size: 24px;
     font-weight: bold;

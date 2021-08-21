@@ -84,9 +84,11 @@
     <Content Include="UI\CreatePodcast.aspx" />
     <Content Include="UI\CSS\CreatePodcastAndAds.css" />
     <Content Include="UI\CSS\Home.css" />
+    <Content Include="UI\CSS\Home2.css" />
     <Content Include="UI\CSS\LandingPage.css" />
     <Content Include="UI\CSS\LoginAndSigup.css" />
     <Content Include="UI\Home.aspx" />
+    <Content Include="UI\Home2.aspx" />
     <Content Include="UI\LandingPage.aspx" />
     <Content Include="UI\Login.aspx" />
     <Content Include="UI\Sigup.aspx" />
@@ -123,6 +125,13 @@
     </Compile>
     <Compile Include="UI\Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Home2.aspx.cs">
+      <DependentUpon>Home2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Home2.aspx.designer.cs">
+      <DependentUpon>Home2.aspx</DependentUpon>
     </Compile>
     <Compile Include="UI\LandingPage.aspx.cs">
       <DependentUpon>LandingPage.aspx</DependentUpon>
