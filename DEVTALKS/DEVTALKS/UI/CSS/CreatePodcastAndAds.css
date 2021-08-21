@@ -1,0 +1,105 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none
+}
+
+body {
+    background-color: #EFF4F6;
+}
+
+#form1 {
+    display: flex;
+}
+
+.sidebar {
+    background-color: #3A3D7A;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.sidebar-title {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin: 44px 7px 0px 7px
+}
+
+.sidebar-selected {
+    position: relative;
+    left: 8px;
+    margin-top: 34px;
+    padding: 15px 35px 15px 23px;
+    background-color: #EFF4F6;
+    border-radius: 6px 0px 0px 6px
+}
+
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+
+.container-main {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px #C9CED6;
+    width: 60%;
+    max-width: 1200px;
+    min-width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white
+}
+
+.container-title {
+    font-family: 'Fira Code';
+    color: white;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #7D90B2;
+    padding: 15px 0px;
+    border-radius: 10px 10px 0px 0px
+}
+
+.container-podcast {
+    width: 60%;
+    border-radius: 10px;
+    margin-top: 30px
+}
+
+.container-input {
+    width: 60%;
+    border-color: #7D90B2;
+    padding: 4px 10px;
+    font-size: 20px;
+    color: #7D90B2;
+    border-radius: 5px;
+    margin-top: 38px;
+}
+
+    .container-input::placeholder {
+        color: #7D90B2
+    }
+
+.container-button {
+    background-color: #7D90B2;
+    border-radius: 5px;
+    width: 60%;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px 0px;
+    margin: clamp(40px, 60px, 90px) 0px;
+    border: none;
+    color: white;
+    font-family: 'Fira Code';
+}

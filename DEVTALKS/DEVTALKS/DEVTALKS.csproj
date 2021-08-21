@@ -68,6 +68,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ASSETS\IMG\computer.png" />
+    <Content Include="ASSETS\ICONS\iconAds.svg" />
+    <Content Include="ASSETS\ICONS\iconAdsBlue.svg" />
+    <Content Include="ASSETS\ICONS\iconHome.svg" />
+    <Content Include="ASSETS\ICONS\iconLogout.svg" />
+    <Content Include="ASSETS\ICONS\iconPLus.svg" />
+    <Content Include="ASSETS\ICONS\iconPlusBlue.svg" />
+    <Content Include="ASSETS\ICONS\iconProfile.svg" />
+    <Content Include="ASSETS\ICONS\iconVideos.svg" />
+    <Content Include="ASSETS\IMG\imgProfile.svg" />
+    <Content Include="ASSETS\IMG\imgPodcast.svg" />
+    <Content Include="UI\CreateAds.aspx" />
+    <Content Include="UI\CreatePodcast.aspx" />
+    <Content Include="UI\CSS\CreatePodcastAndAds.css" />
+    <Content Include="UI\CSS\LandingPage.css" />
+    <Content Include="UI\LandingPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -77,6 +93,27 @@
     <Compile Include="DTO\PodcastDTO.cs" />
     <Compile Include="DTO\ThemeDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\CreateAds.aspx.cs">
+      <DependentUpon>CreateAds.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\CreateAds.aspx.designer.cs">
+      <DependentUpon>CreateAds.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CreatePodcast.aspx.cs">
+      <DependentUpon>CreatePodcast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\CreatePodcast.aspx.designer.cs">
+      <DependentUpon>CreatePodcast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LandingPage.aspx.cs">
+      <DependentUpon>LandingPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\LandingPage.aspx.designer.cs">
+      <DependentUpon>LandingPage.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -87,9 +124,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ASSETS\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

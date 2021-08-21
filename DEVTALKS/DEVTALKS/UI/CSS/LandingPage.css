@@ -1,0 +1,105 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+body {
+    background-color: #EFF4F6
+}
+
+
+.navbar {
+    background-color: #3A3D7A
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 88vh
+}
+
+.containerMain {
+    display: flex
+}
+
+.btnIn {
+    color: white;
+    font-weight: 500
+}
+
+    .btnIn:hover {
+        color: gainsboro
+    }
+
+.btnUp {
+    color: #3A3D7A;
+    font-weight: bold;
+    background-color: white;
+}
+
+.imgComputer {
+    width: 35%
+}
+
+.textMain {
+    width: 65%;
+    display: block
+}
+
+.textTitleMain {
+    font-family: sans-serif;
+}
+
+.btnStart {
+    color: white;
+    background-color: #3A3D7A;
+    font-weight: bold;
+}
+
+.btnTeste {
+    margin-left: 8px;
+    color: #767CFB;
+    background-color: white;
+    border: 1px solid #767CFB;
+    font-weight: 500
+}
+
+    .btnTeste:hover {
+        background-color: #767CFB;
+        color: white
+    }
+
+.linkText {
+    text-decoration: none;
+}
+
+    .linkText:hover {
+        text-decoration: underline
+    }
+
+@media screen and (max-width: 1203px) {
+
+    .container {
+        height: initial
+    }
+
+    .containerMain {
+        display: block;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btnTeste {
+        margin-left: 0px;
+        margin-top: 5px
+    }
+
+    .textMain {
+        width: 100%
+    }
+
+    .imgComputer {
+        width: 60%
+    }
+}
