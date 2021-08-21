@@ -19,8 +19,8 @@
             <div class="container-lg">
                 <asp:Label Text="DEVTALKS" class="fs-2 fw-bold text-white" runat="server"></asp:Label>
                 <span>
-                    <asp:HyperLink NavigateUrl="#" class="fs-5 btn btnIn" Text="Entrar" runat="server"></asp:HyperLink>
-                    <asp:HyperLink NavigateUrl="#" class="btn fs-5 btnUp" Text="Cadastre-se" runat="server"></asp:HyperLink>
+                    <asp:HyperLink NavigateUrl="~/UI/Login.aspx" class="fs-5 btn btnIn" Text="Entrar" runat="server"></asp:HyperLink>
+                    <asp:HyperLink NavigateUrl="~/UI/Sigup.aspx" class="btn fs-5 btnUp" Text="Cadastre-se" runat="server"></asp:HyperLink>
                 </span>
             </div>
         </nav>
@@ -38,11 +38,11 @@
                          runat="server" CssClass="textDescriptionMain fs-5" ForeColor="#3A3D7A">
                      </asp:Label>
                      <div class="mt-5 mb-5">
-                        <asp:HyperLink NavigateUrl="#" Text="Crie seus podcast" runat="server" CssClass="btn fs-5 btnStart"></asp:HyperLink>
-                        <asp:HyperLink NavigateUrl="#" Text="Teste 30 dia Gratis" runat="server" CssClass="btn fs-5 btnTeste"></asp:HyperLink>
+                        <asp:HyperLink NavigateUrl="~/UI/Sigup.aspx" Text="Crie seus podcast" runat="server" CssClass="btn fs-5 btnStart"></asp:HyperLink>
+                        <asp:HyperLink NavigateUrl="~/UI/Sigup.aspx" Text="Teste 30 dia Gratis" runat="server" CssClass="btn fs-5 btnTeste"></asp:HyperLink>
                      </div>
                      <asp:Label Text="Tem cadastro na DevTalks? " runat="server" CssClass="fs-5 fw-bolder" ForeColor="#3A3D7A"></asp:Label>
-                     <asp:HyperLink NavigateUrl="#" Text="Acesse seu perfil" runat="server" CssClass="fs-5 linkText fw-bolder" ForeColor="#3A3D7A"></asp:HyperLink>
+                     <asp:HyperLink NavigateUrl="~/UI/Login.aspx" Text="Acesse seu perfil" runat="server" CssClass="fs-5 linkText fw-bolder" ForeColor="#3A3D7A"></asp:HyperLink>
                  </div>
                  <asp:Image ImageUrl="~/ASSETS/IMG/computer.png" runat="server" CssClass="imgComputer"/>
             </div>

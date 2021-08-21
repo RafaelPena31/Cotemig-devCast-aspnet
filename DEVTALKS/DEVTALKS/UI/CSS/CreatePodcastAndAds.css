@@ -16,8 +16,9 @@ body {
 
 .sidebar {
     background-color: #3A3D7A;
-    height: auto;
-    min-height: 100vh;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center

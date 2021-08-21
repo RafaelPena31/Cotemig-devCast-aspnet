@@ -18,7 +18,7 @@
         <aside class="sidebar">
             <asp:HyperLink runat="server" class="sidebar-title" Text="DTALKS" NavigateUrl="#" />
 
-            <asp:HyperLink NavigateUrl="#" ImageUrl="~/ASSETS/ICONS/iconHome.svg" runat="server" style="margin-top: 77px" />
+            <asp:HyperLink NavigateUrl="~/UI/Home.aspx" ImageUrl="~/ASSETS/ICONS/iconHome.svg" runat="server" style="margin-top: 77px" />
 
             <asp:HyperLink NavigateUrl="#" ImageUrl="~/ASSETS/ICONS/iconVideos.svg" runat="server" style="margin-top: 49px"/>
 
@@ -29,7 +29,7 @@
             <asp:HyperLink runat="server" NavigateUrl="#" ImageUrl="~/ASSETS/ICONS/iconPlusBlue.svg" CssClass="sidebar-selected"/>
         </aside>
 
-        <div class="w-100">
+        <div class="w-100 " style="margin-left: 100px">
             <nav class="navbar">
 
                 <span class="text-end me-2">
