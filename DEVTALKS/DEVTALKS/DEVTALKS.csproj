@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ASSETS\ICONS\iconHomeBlue.svg" />
+    <Content Include="ASSETS\ICONS\iconVideosBlue.svg" />
     <Content Include="ASSETS\IMG\computer.png" />
     <Content Include="ASSETS\ICONS\iconAds.svg" />
     <Content Include="ASSETS\ICONS\iconAdsBlue.svg" />
@@ -83,10 +84,12 @@
     <Content Include="UI\CreateAds.aspx" />
     <Content Include="UI\CreatePodcast.aspx" />
     <Content Include="UI\CSS\CreatePodcastAndAds.css" />
+    <Content Include="UI\CSS\Dashboard.css" />
     <Content Include="UI\CSS\Home.css" />
     <Content Include="UI\CSS\Home2.css" />
     <Content Include="UI\CSS\LandingPage.css" />
     <Content Include="UI\CSS\LoginAndSigup.css" />
+    <Content Include="UI\Dashboard.aspx" />
     <Content Include="UI\Home.aspx" />
     <Content Include="UI\Home2.aspx" />
     <Content Include="UI\LandingPage.aspx" />
@@ -118,6 +121,13 @@
     </Compile>
     <Compile Include="UI\CreatePodcast.aspx.designer.cs">
       <DependentUpon>CreatePodcast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
     </Compile>
     <Compile Include="UI\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>

@@ -90,7 +90,7 @@
 
                         <asp:Label runat="server" Text="Gêneros" CssClass="subtitle" />
                         <div>
-                            <div class="d-flex justify-content-around" style="flex-flow: wrap">
+                            <div class="d-flex" style="flex-flow: wrap">
                                 <asp:Label runat="server" CssClass="p" Text="Front End" />
                                 <asp:Label runat="server" CssClass="p" Text="Back End" />
                                 <asp:Label runat="server" CssClass="p" Text="DBA" />
