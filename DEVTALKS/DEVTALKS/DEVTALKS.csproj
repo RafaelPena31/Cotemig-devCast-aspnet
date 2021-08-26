@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ASSETS\ICONS\iconHomeBlue.svg" />
+    <Content Include="ASSETS\ICONS\iconProfileBlu.svg" />
     <Content Include="ASSETS\ICONS\iconVideosBlue.svg" />
     <Content Include="ASSETS\IMG\computer.png" />
     <Content Include="ASSETS\ICONS\iconAds.svg" />
@@ -81,8 +82,10 @@
     <Content Include="ASSETS\ICONS\iconVideos.svg" />
     <Content Include="ASSETS\IMG\imgProfile.svg" />
     <Content Include="ASSETS\IMG\imgPodcast.svg" />
+    <Content Include="UI\Chat.aspx" />
     <Content Include="UI\CreateAds.aspx" />
     <Content Include="UI\CreatePodcast.aspx" />
+    <Content Include="UI\CSS\Chat.css" />
     <Content Include="UI\CSS\CreatePodcastAndAds.css" />
     <Content Include="UI\CSS\Dashboard.css" />
     <Content Include="UI\CSS\Home.css" />
@@ -108,6 +111,13 @@
     <Compile Include="DTO\ThemeDTO.cs" />
     <Compile Include="DTO\UserDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Chat.aspx.cs">
+      <DependentUpon>Chat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Chat.aspx.designer.cs">
+      <DependentUpon>Chat.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UI\CreateAds.aspx.cs">
       <DependentUpon>CreateAds.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
