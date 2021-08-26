@@ -21,7 +21,7 @@
 
             <asp:HyperLink NavigateUrl="~/UI/Dashboard.aspx" ImageUrl="~/ASSETS/ICONS/iconVideos.svg" runat="server" Style="margin-top: 34px" />
 
-            <asp:HyperLink NavigateUrl="#" ImageUrl="~/ASSETS/ICONS/iconProfile.svg" runat="server" Style="margin-top: 49px" />
+            <asp:HyperLink NavigateUrl="~/UI/Chat.aspx" ImageUrl="~/ASSETS/ICONS/iconProfile.svg" runat="server" Style="margin-top: 49px" />
 
             <asp:HyperLink NavigateUrl="~/UI/CreateAds.aspx" ImageUrl="~/ASSETS/ICONS/iconAds.svg" runat="server" Style="margin-top: 49px" />
 

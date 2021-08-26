@@ -97,9 +97,21 @@ body {
     }
 
     .img{
-        margin-bottom: 5px
+        margin-bottom: 5px;
+        width: 250px;
+        margin-left: 5px
     }
 
     .img2{
         margin-bottom: 5px
+    }
+
+    @media(max-width: 1550px) {
+        .img {
+            width: 44%;
+        }
+
+        .img2 {
+            width: 15%
+        }
     }

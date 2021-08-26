@@ -22,7 +22,7 @@
 
             <asp:HyperLink NavigateUrl="~/UI/Dashboard.aspx" ImageUrl="~/ASSETS/ICONS/iconVideos.svg" runat="server" style="margin-top: 49px"/>
 
-            <asp:HyperLink NavigateUrl="#" ImageUrl="~/ASSETS/ICONS/iconProfile.svg" runat="server"  style="margin-top: 49px" />
+            <asp:HyperLink NavigateUrl="~/UI/Chat.aspx" ImageUrl="~/ASSETS/ICONS/iconProfile.svg" runat="server"  style="margin-top: 49px" />
 
             <asp:HyperLink  NavigateUrl="#" ImageUrl="~/ASSETS/ICONS/iconAdsBlue.svg" runat="server"  CssClass="sidebar-selected"/>
 
