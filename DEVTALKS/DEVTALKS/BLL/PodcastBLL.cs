@@ -32,41 +32,41 @@ namespace DEVTALKS.BLL
 
         public void CreatePodcast(PodcastDTO podcast)
         {
-            string sql = string.Format($@"INSERT INTO Podcast VALUES(NULL, '{podcast.Title}', '{podcast.Description}', '{podcast.Like}', '{podcast.Dislike}', '{podcast.Path}', '{podcast.ChannelId}', '{podcast.ChannelUserId}', '{podcast.ThemeId}');");
+            string sql = string.Format($@"INSERT INTO Podcast VALUES(NULL, '{podcast.Title}', '{podcast.Description}', '{podcast.Like}', '{podcast.Dislike}', '{podcast.Path}', '{podcast.ChannelId}', '{podcast.ChannelUserId}', '{podcast.Theme}');");
             connection.ExecutionSQL(sql);
         }
 
         public void UpdatePodcast(PodcastDTO podcast)
         {
-            string sql = string.Format($@"UPDATE Podcast SET title='{podcast.Title}', description='{podcast.Description}', like='{podcast.Like}', dislike='{podcast.Dislike}', path='{podcast.Path}', Channel_id='{podcast.ChannelId}', Channel_User_id='{podcast.ChannelUserId}', Theme_id='{podcast.ThemeId}' WHERE id = '{podcast.Id}';");
+            string sql = string.Format($@"UPDATE Podcast SET title='{podcast.Title}', description='{podcast.Description}', like='{podcast.Like}', dislike='{podcast.Dislike}', path='{podcast.Path}', Channel_id='{podcast.ChannelId}', Channel_User_id='{podcast.ChannelUserId}', Theme_id='{podcast.Theme}' WHERE id = '{podcast.Id}';");
 
             connection.ExecutionSQL(sql);
         }
 
         public void AddLike(PodcastDTO podcast)
         {
-            string sql = string.Format($@"UPDATE Podcast SET title='{podcast.Title}', description='{podcast.Description}', like='{podcast.Like + 1}', dislike='{podcast.Dislike}', path='{podcast.Path}', Channel_id='{podcast.ChannelId}', Channel_User_id='{podcast.ChannelUserId}', Theme_id='{podcast.ThemeId}' WHERE id = '{podcast.Id}';");
+            string sql = string.Format($@"UPDATE Podcast SET title='{podcast.Title}', description='{podcast.Description}', like='{podcast.Like + 1}', dislike='{podcast.Dislike}', path='{podcast.Path}', Channel_id='{podcast.ChannelId}', Channel_User_id='{podcast.ChannelUserId}', Theme_id='{podcast.Theme}' WHERE id = '{podcast.Id}';");
 
             connection.ExecutionSQL(sql);
         }
 
         public void DeleteLike(PodcastDTO podcast)
         {
-            string sql = string.Format($@"UPDATE Podcast SET title='{podcast.Title}', description='{podcast.Description}', like='{podcast.Like - 1}', dislike='{podcast.Dislike}', path='{podcast.Path}', Channel_id='{podcast.ChannelId}', Channel_User_id='{podcast.ChannelUserId}', Theme_id='{podcast.ThemeId}' WHERE id = '{podcast.Id}';");
+            string sql = string.Format($@"UPDATE Podcast SET title='{podcast.Title}', description='{podcast.Description}', like='{podcast.Like - 1}', dislike='{podcast.Dislike}', path='{podcast.Path}', Channel_id='{podcast.ChannelId}', Channel_User_id='{podcast.ChannelUserId}', Theme_id='{podcast.Theme}' WHERE id = '{podcast.Id}';");
 
             connection.ExecutionSQL(sql);
         }
 
         public void AddDislike(PodcastDTO podcast)
         {
-            string sql = string.Format($@"UPDATE Podcast SET title='{podcast.Title}', description='{podcast.Description}', like='{podcast.Like}', dislike='{podcast.Dislike + 1}', path='{podcast.Path}', Channel_id='{podcast.ChannelId}', Channel_User_id='{podcast.ChannelUserId}', Theme_id='{podcast.ThemeId}' WHERE id = '{podcast.Id}';");
+            string sql = string.Format($@"UPDATE Podcast SET title='{podcast.Title}', description='{podcast.Description}', like='{podcast.Like}', dislike='{podcast.Dislike + 1}', path='{podcast.Path}', Channel_id='{podcast.ChannelId}', Channel_User_id='{podcast.ChannelUserId}', Theme_id='{podcast.Theme}' WHERE id = '{podcast.Id}';");
 
             connection.ExecutionSQL(sql);
         }
 
         public void DeleteDislike(PodcastDTO podcast)
         {
-            string sql = string.Format($@"UPDATE Podcast SET title='{podcast.Title}', description='{podcast.Description}', like='{podcast.Like}', dislike='{podcast.Dislike - 1}', path='{podcast.Path}', Channel_id='{podcast.ChannelId}', Channel_User_id='{podcast.ChannelUserId}', Theme_id='{podcast.ThemeId}' WHERE id = '{podcast.Id}';");
+            string sql = string.Format($@"UPDATE Podcast SET title='{podcast.Title}', description='{podcast.Description}', like='{podcast.Like}', dislike='{podcast.Dislike - 1}', path='{podcast.Path}', Channel_id='{podcast.ChannelId}', Channel_User_id='{podcast.ChannelUserId}', Theme_id='{podcast.Theme}' WHERE id = '{podcast.Id}';");
 
             connection.ExecutionSQL(sql);
         }

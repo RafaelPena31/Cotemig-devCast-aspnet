@@ -13,5 +13,10 @@ namespace DEVTALKS.UI
         {
 
         }
+
+        protected void Btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

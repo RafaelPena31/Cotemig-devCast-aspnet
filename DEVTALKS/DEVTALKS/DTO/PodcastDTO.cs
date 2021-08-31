@@ -7,8 +7,8 @@ namespace DEVTALKS.DTO
 {
     public class PodcastDTO
     {
-        private int id, channelId, channelUserId, themeId, like, dislike;
-        private string title, description, path;
+        private int id, channelId, channelUserId, like, dislike;
+        private string title, description, path, theme;
 
         public int Id { get => id; set => id = value; }
 
@@ -44,20 +44,20 @@ namespace DEVTALKS.DTO
             get { return this.channelUserId; }
         }
 
-        public int ThemeId
+        public string Theme
         {
             set
             {
-                if (value != 0)
+                if (value != string.Empty)
                 {
-                    this.themeId = value;
+                    this.theme = value;
                 }
                 else
                 {
                     throw new Exception("Campo channel user id obrigatório");
                 }
             }
-            get { return this.themeId; }
+            get { return this.theme; }
         }
 
         public int Like

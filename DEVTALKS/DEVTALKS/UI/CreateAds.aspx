@@ -55,7 +55,7 @@
 
                     <asp:TextBox runat="server" placeholder="Título" CssClass="container-input"/>
 
-                    <asp:Button Text="Criar Anúncio" runat="server" CssClass="container-button" />
+                    <asp:Button Text="Criar Anúncio" OnClick="Btn_Click" ID="Btn" runat="server" CssClass="container-button" />
                 </div>
             </main>
         </div>

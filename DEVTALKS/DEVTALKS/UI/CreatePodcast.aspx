@@ -49,15 +49,15 @@
                 <div class="container-main">
                     <asp:Label Text="PodCast" runat="server" class="container-title"/>
 
-                    <asp:Image runat="server" ImageUrl="~/ASSETS/IMG/imgPodcast.svg" CssClass="container-podcast"/>
+                     <asp:TextBox runat="server" placeholder="Image link" ID="ImageInput" CssClass="container-input"/>
 
-                    <asp:TextBox runat="server" placeholder="Tema" CssClass="container-input"/>
+                    <asp:TextBox runat="server" placeholder="Tema" ID="ThemeInput" CssClass="container-input"/>
 
-                    <asp:TextBox runat="server" placeholder="Descrição" CssClass="container-input"/>
+                    <asp:TextBox runat="server" placeholder="Descrição" ID="DescriptionInput" CssClass="container-input"/>
 
-                    <asp:TextBox runat="server" placeholder="Título" CssClass="container-input"/>
+                    <asp:TextBox runat="server" placeholder="Título" ID="TitleInput" CssClass="container-input"/>
 
-                    <asp:Button Text="Criar Podcast" runat="server" CssClass="container-button" />
+                    <asp:Button Text="Criar Podcast" OnClick="btn_Click" ID="btn" runat="server" CssClass="container-button" />
                 </div>
             </main>
         </div>

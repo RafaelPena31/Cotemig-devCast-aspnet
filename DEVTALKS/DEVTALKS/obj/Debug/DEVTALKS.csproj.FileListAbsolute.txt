@@ -67,3 +67,23 @@ C:\ESCOLA\3 ano\DevWeb2\TrabalhoOficial\DEVTALKS\DEVTALKS\obj\Debug\DEVTALKS.csp
 C:\ESCOLA\3 ano\DevWeb2\TrabalhoOficial\DEVTALKS\DEVTALKS\obj\Debug\DEVTALKS.csproj.CopyComplete
 C:\ESCOLA\3 ano\DevWeb2\TrabalhoOficial\DEVTALKS\DEVTALKS\obj\Debug\DEVTALKS.dll
 C:\ESCOLA\3 ano\DevWeb2\TrabalhoOficial\DEVTALKS\DEVTALKS\obj\Debug\DEVTALKS.pdb
+C:\Users\Maria\Source\Repos\Cotemig-devCast\DEVTALKS\DEVTALKS\obj\Debug\DEVTALKS.csproj.AssemblyReference.cache
+C:\Users\Maria\Source\Repos\Cotemig-devCast\DEVTALKS\DEVTALKS\obj\Debug\DEVTALKS.csproj.CoreCompileInputs.cache
+C:\Users\Maria\Source\Repos\Cotemig-devCast\DEVTALKS\DEVTALKS\obj\Debug\DEVTALKS.dll
+C:\Users\Maria\Source\Repos\Cotemig-devCast\DEVTALKS\DEVTALKS\obj\Debug\DEVTALKS.pdb
+C:\Users\Maria\Source\Repos\Cotemig-devCast\DEVTALKS\DEVTALKS\bin\DEVTALKS.dll.config
+C:\Users\Maria\Source\Repos\Cotemig-devCast\DEVTALKS\DEVTALKS\bin\DEVTALKS.dll
+C:\Users\Maria\Source\Repos\Cotemig-devCast\DEVTALKS\DEVTALKS\bin\DEVTALKS.pdb
+C:\Users\Maria\Source\Repos\Cotemig-devCast\DEVTALKS\DEVTALKS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Maria\Source\Repos\Cotemig-devCast\DEVTALKS\DEVTALKS\bin\Google.Protobuf.dll
+C:\Users\Maria\Source\Repos\Cotemig-devCast\DEVTALKS\DEVTALKS\bin\Zstandard.Net.dll
+C:\Users\Maria\Source\Repos\Cotemig-devCast\DEVTALKS\DEVTALKS\bin\K4os.Compression.LZ4.Streams.dll
+C:\Users\Maria\Source\Repos\Cotemig-devCast\DEVTALKS\DEVTALKS\bin\Ubiety.Dns.Core.dll
+C:\Users\Maria\Source\Repos\Cotemig-devCast\DEVTALKS\DEVTALKS\bin\System.Buffers.dll
+C:\Users\Maria\Source\Repos\Cotemig-devCast\DEVTALKS\DEVTALKS\bin\K4os.Compression.LZ4.dll
+C:\Users\Maria\Source\Repos\Cotemig-devCast\DEVTALKS\DEVTALKS\bin\K4os.Hash.xxHash.dll
+C:\Users\Maria\Source\Repos\Cotemig-devCast\DEVTALKS\DEVTALKS\bin\System.Memory.dll
+C:\Users\Maria\Source\Repos\Cotemig-devCast\DEVTALKS\DEVTALKS\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Maria\Source\Repos\Cotemig-devCast\DEVTALKS\DEVTALKS\bin\System.Numerics.Vectors.dll
+C:\Users\Maria\Source\Repos\Cotemig-devCast\DEVTALKS\DEVTALKS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Maria\Source\Repos\Cotemig-devCast\DEVTALKS\DEVTALKS\obj\Debug\DEVTALKS.csproj.CopyComplete
