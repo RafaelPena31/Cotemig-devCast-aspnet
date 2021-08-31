@@ -15,9 +15,9 @@
 <body>
     <form id="form1" runat="server">
         <aside class="sidebar">
-            <asp:HyperLink runat="server" class="sidebar-title" Text="DTALKS" NavigateUrl="#" />
+            <asp:HyperLink runat="server" class="sidebar-title" Text="DTALKS" NavigateUrl="~/UI/Home.aspx" />
 
-            <asp:HyperLink NavigateUrl="~/UI/Home.aspx" ImageUrl="~/ASSETS/ICONS/iconHome.svg" runat="server" Style="margin-top: 77px" />
+            <asp:HyperLink NavigateUrl="~/UI/Home2.aspx" ImageUrl="~/ASSETS/ICONS/iconHome.svg" runat="server" Style="margin-top: 77px" />
 
             <asp:HyperLink NavigateUrl="#" ImageUrl="~/ASSETS/ICONS/iconVideosBlue.svg" runat="server" CssClass="sidebar-selected" />
 

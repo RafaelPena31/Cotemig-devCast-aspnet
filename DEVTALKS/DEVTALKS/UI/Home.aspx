@@ -17,9 +17,9 @@
         <aside class="sidebar">
             <asp:HyperLink runat="server" class="sidebar-title" Text="DTALKS" NavigateUrl="#" />
 
-            <asp:HyperLink NavigateUrl="#" ImageUrl="~/ASSETS/ICONS/iconHomeBlue.svg" runat="server" CssClass="sidebar-selected" Style="margin-top: 62px" />
+            <asp:HyperLink NavigateUrl="~/UI/Home2.aspx" ImageUrl="~/ASSETS/ICONS/iconHome.svg" runat="server" Style="margin-top: 79px" />
 
-            <asp:HyperLink NavigateUrl="~/UI/Dashboard.aspx" ImageUrl="~/ASSETS/ICONS/iconVideos.svg" runat="server" Style="margin-top: 34px" />
+            <asp:HyperLink NavigateUrl="~/UI/Dashboard.aspx" ImageUrl="~/ASSETS/ICONS/iconVideos.svg" runat="server" Style="margin-top: 49px" />
 
             <asp:HyperLink NavigateUrl="~/UI/Chat.aspx" ImageUrl="~/ASSETS/ICONS/iconProfile.svg" runat="server" Style="margin-top: 49px" />
 

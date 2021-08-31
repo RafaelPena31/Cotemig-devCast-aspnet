@@ -54,7 +54,7 @@ namespace DEVTALKS.DTO
                 }
                 else
                 {
-                    throw new Exception("Campo channel user id obrigatório");
+                    throw new Exception("Campo theme obrigatório");
                 }
             }
             get { return this.theme; }

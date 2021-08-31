@@ -38,7 +38,7 @@ namespace DEVTALKS.BLL
 
         public void UpdatePodcast(PodcastDTO podcast)
         {
-            string sql = string.Format($@"UPDATE Podcast SET title='{podcast.Title}', description='{podcast.Description}', like='{podcast.Like}', dislike='{podcast.Dislike}', path='{podcast.Path}', Channel_id='{podcast.ChannelId}', Channel_User_id='{podcast.ChannelUserId}', Theme_id='{podcast.Theme}' WHERE id = '{podcast.Id}';");
+            string sql = string.Format($@"UPDATE Podcast SET title='{podcast.Title}', description='{podcast.Description}', likePod='{podcast.Like}', dislike='{podcast.Dislike}', path='{podcast.Path}', Channel_id='{podcast.ChannelId}', Channel_User_id='{podcast.ChannelUserId}', Theme='{podcast.Theme}' WHERE id = '{podcast.Id}';");
 
             connection.ExecutionSQL(sql);
         }

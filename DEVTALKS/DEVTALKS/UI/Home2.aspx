@@ -1,12 +1,12 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home2.aspx.cs" Inherits="DEVTALKS.UI.Home2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home2.aspx.cs" Inherits="DEVTALKS.UI.Home2" EnableViewState="true" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Home2</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
         rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
         crossorigin="anonymous" />
@@ -15,7 +15,7 @@
 <body>
     <form id="form1" runat="server">
         <aside class="sidebar">
-            <asp:HyperLink runat="server" class="sidebar-title" Text="DTALKS" NavigateUrl="#" />
+            <asp:HyperLink runat="server" class="sidebar-title" Text="DTALKS" NavigateUrl="~/UI/Home.aspx" />
 
             <asp:HyperLink NavigateUrl="#" ImageUrl="~/ASSETS/ICONS/iconHomeBlue.svg" runat="server" CssClass="sidebar-selected" Style="margin-top: 62px" />
 
@@ -28,7 +28,7 @@
             <asp:HyperLink runat="server" NavigateUrl="~/UI/CreatePodcast.aspx" ImageUrl="~/ASSETS/ICONS/iconPLus.svg" Style="margin-top: 49px" />
         </aside>
 
-         <div style="margin-left: 100px; width: auto">
+        <div style="margin-left: 100px; width: auto">
             <nav class="navbar">
 
                 <span class="text-end me-2">
@@ -44,36 +44,91 @@
                 <asp:HyperLink runat="server" ImageUrl="~/ASSETS/ICONS/iconLogout.svg" NavigateUrl="~/UI/LandingPage.aspx" CssClass="me-5" />
             </nav>
 
-              <main class="main-container">
+            <main class="main-container">
                 <asp:TextBox type="text" runat="server" CssClass="input" placeholder="🔍  Pesquise por artistas" />
 
-                  <div style="width: 90%" class="mt-5">
-                      <asp:Label runat="server" Text="Seu Uploads" CssClass="subtitle" />
+                <div style="width: 90%" class="mt-5">
+                    <asp:Label runat="server" Text="Seu Uploads" CssClass="subtitle" />
 
-                      <div class="d-flex">
-                          <asp:Image ImageUrl="~/ASSETS/IMG/imgProfileLarge.svg" runat="server" />
+                    <div class="d-flex">
+                        <asp:Image ImageUrl="~/ASSETS/IMG/imgProfileLarge.svg" runat="server" />
 
-                          <div class="w-auto ms-5 d-flex flex-column">
-                              <asp:Label runat="server" CssClass="subtitle" Font-Size="50px" Text="Seus Podcasts"/>
+                        <div class="w-auto ms-5 d-flex flex-column">
+                            <asp:Label runat="server" CssClass="subtitle" Font-Size="50px" Text="Seus Podcasts" />
 
-                              <asp:Label runat="server" class="subtitle" Font-Size="18px" ForeColor="#A6ACBE" Text="Monica Lee" />
+                            <asp:Label runat="server" class="subtitle" Font-Size="18px" ForeColor="#A6ACBE" Text="Monica Lee" />
 
-                              <asp:Label runat="server" CssClass="subtitle mt-3" Font-Size="12px" ForeColor="#A6ACBE" Text="Programadora, 
+                            <asp:Label runat="server" CssClass="subtitle mt-3" Font-Size="12px" ForeColor="#A6ACBE" Text="Programadora, 
                                   DBA, especialista em engenharia de dados, leitora de quadrinhos, entusiasta no front end, comentarista
                                   de tecnologia" />
 
-                              <div class="mt-5 w-100">
-                                  <asp:Image ImageUrl="~/ASSETS/IMG/line.svg" runat="server" CssClass="w-100"/>
-                                  <asp:Image ImageUrl="~/ASSETS/IMG/line.svg" runat="server" CssClass="w-100"/>
-                                  <asp:Image ImageUrl="~/ASSETS/IMG/line.svg" runat="server" CssClass="w-100"/>
-                                  <asp:Image ImageUrl="~/ASSETS/IMG/line.svg" runat="server" CssClass="w-100"/>
-                                  <asp:Image ImageUrl="~/ASSETS/IMG/line.svg" runat="server" CssClass="w-100"/>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+                            <div class="mt-5 w-100">
+                                <asp:GridView ID="gridView" 
+                                    class="table table-hover"
+                                    AutoGenerateColumns="false"
+                                    OnRowDeleting="gridView_RowDeleting"
+                                    OnRowCancelingEdit="gridView_RowCancelingEdit"
+                                    OnRowEditing="gridView_RowEditing"
+                                    OnRowUpdating="gridView_RowUpdating"
+                                    DataKeyNames="id"
+                                    runat="server">
 
-                  <div class="w-100 d-flex justify-content-around mt-5">
+                                    <Columns>
+
+                                        <asp:TemplateField HeaderText="Código">
+                                            <ItemTemplate>
+                                                <asp:Label class="form-label" ID="lblCode" runat="server" Text='<%# Eval("id") %>'></asp:Label>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+
+                                        <asp:TemplateField HeaderText="Title">
+                                            <ItemTemplate>
+                                                <asp:Label class="form-label" ID="lblTitle" runat="server" Text='<%# Eval("title") %>'></asp:Label>
+                                            </ItemTemplate>
+                                            <EditItemTemplate>
+                                                <asp:TextBox class="form-control" ID="txtTitle" Text='<%# Bind("title") %>' runat="server"></asp:TextBox>
+                                            </EditItemTemplate>
+                                        </asp:TemplateField>
+
+                                        <asp:TemplateField HeaderText="Descrição">
+                                            <ItemTemplate>
+                                                <asp:Label class="form-label" ID="lblDescription" runat="server" Text='<%# Eval("description") %>'></asp:Label>
+                                            </ItemTemplate>
+                                            <EditItemTemplate>
+                                                <asp:TextBox class="form-control" ID="txtDescription" Text='<%# Bind("description") %>' runat="server"></asp:TextBox>
+                                            </EditItemTemplate>
+                                        </asp:TemplateField>
+
+                                        <asp:TemplateField HeaderText="Theme">
+                                            <ItemTemplate>
+                                                <asp:Label class="form-label" ID="lblTheme" runat="server" Text='<%# Eval("Theme") %>'></asp:Label>
+                                            </ItemTemplate>
+                                            <EditItemTemplate>
+                                                <asp:TextBox class="form-control" ID="txtTheme" Text='<%# Bind("Theme") %>' runat="server"></asp:TextBox>
+                                            </EditItemTemplate>
+                                        </asp:TemplateField>
+
+                                        <asp:TemplateField HeaderText="Link">
+                                            <ItemTemplate>
+                                                <asp:HyperLink NavigateUrl='<%# Eval("path") %>' class="form-label" ID="lblPath" runat="server" Text='<%# Eval("path") %>'></asp:HyperLink>
+                                            </ItemTemplate>
+                                            <EditItemTemplate>
+                                                <asp:TextBox class="form-control" ID="txtPath" Text='<%# Bind("path") %>' runat="server"></asp:TextBox>
+                                            </EditItemTemplate>
+                                        </asp:TemplateField>
+
+                                        <asp:CommandField ShowEditButton="true" ButtonType="Button" EditText="🖊" 
+                                            CancelText="❌" UpdateText="✔" runat="server"/>
+
+                                        <asp:CommandField ShowDeleteButton="true" ButtonType="Button" DeleteText="🗑" runat="server"/>
+                                    </Columns>
+                                </asp:GridView>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-100 d-flex justify-content-around mt-5">
                     <div style="width: 40%">
                         <asp:Label runat="server" Text="Para você" CssClass="subtitle" />
                         <div class="d-flex justify-content-around" style="flex-flow: wrap">
@@ -114,8 +169,8 @@
                         </div>
                     </div>
                 </div>
-              </main>
-          </div>
+            </main>
+        </div>
     </form>
 </body>
 </html>

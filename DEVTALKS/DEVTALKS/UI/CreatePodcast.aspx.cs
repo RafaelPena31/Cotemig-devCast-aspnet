@@ -16,7 +16,7 @@ namespace DEVTALKS.UI
 
         }
 
-        protected void btn_Click(object sender, EventArgs e)
+        protected void btnCreate_Click(object sender, EventArgs e)
         {
             try
             {
@@ -27,18 +27,23 @@ namespace DEVTALKS.UI
                 podcastDTO.Path = ImageInput.Text;
                 podcastDTO.Title = TitleInput.Text;
                 podcastDTO.Theme = ThemeInput.Text;
-                podcastDTO.Like = 0;
-                podcastDTO.Dislike = 0;
-                podcastDTO.ChannelId = 0;
-                podcastDTO.ChannelUserId = 0;
+                podcastDTO.Like = 1;
+                podcastDTO.Dislike = 1;
+                podcastDTO.ChannelId = 1;
+                podcastDTO.ChannelUserId = 1;
 
                 podcastBLL.CreatePodcast(podcastDTO);
 
-                Response.Redirect("Home.aspx");
+                ScriptManager.RegisterStartupScript(Page, Page.GetType(), Guid.NewGuid().ToString(), "alert('Podcast registrado com sucesso!!!')", true);
+
+                DescriptionInput.Text = "";
+                ImageInput.Text = "";
+                TitleInput.Text = "";
+                ThemeInput.Text = "";
             }
-            catch
+            catch (Exception error)
             {
-                Response.Write("<script>alert('Erro inesperado')<script>");
+                msgError.Text = "* " + error.Message;
             }
         }
     }

@@ -14,7 +14,7 @@ namespace DEVTALKS.BLL
 
         public void Insert(UserDTO user)
         {
-            string sql = string.Format($@"INSERT INTO user VALUES(NUll, '{user.Name}', '{user.Email}', '{user.Password}', '{user.IsAdmin}', '{user.IsCC}')");
+            string sql = string.Format($@"INSERT INTO user VALUES(NUll, '{user.Name}', '{user.Email}', '{user.Password}', '{user.IsAdmin}', '{user.IsCC}', {user.IsPremium});");
             connection.ExecutionSQL(sql);
         }
 

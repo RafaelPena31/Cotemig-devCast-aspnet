@@ -17,16 +17,16 @@
 
                 <asp:Label Text="Usuário" runat="server"/>
                 <br />
-                <asp:TextBox runat="server" CssClass="input" type="text"/>
+                <asp:TextBox runat="server" ID="txtEmail" CssClass="input" type="text"/>
                 
                 <br /> <br />  <br /> 
 
                 <asp:Label runat="server" Text="Senha" />
                 <br />
-                <asp:TextBox runat="server" CssClass="input" type="password" /><br />
+                <asp:TextBox runat="server" CssClass="input" ID="txtPassword" type="password" /><br />
 
                 <div style="margin-top: 32px">
-                    <asp:Button type="submit" CssClass="button" Text="Login" runat="server" style="margin-right: 20px"/>
+                    <asp:Button CssClass="button" ID="btnLogin" OnClick="btnLogin_Click" Text="Login" runat="server" style="margin-right: 20px"/>
                     <asp:LinkButton runat="server"  CssClass="button" PostBackUrl="~/UI/Sigup.aspx" Text="Cadastrar uma conta"/>
                 </div>
                 <h3><asp:HyperLink runat="server" style="color:blue">Entrar com o Facebook</asp:HyperLink></h3>

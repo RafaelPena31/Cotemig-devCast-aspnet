@@ -16,29 +16,30 @@
             <div class="container">
 
                 <asp:Label Text="Usuário" runat="server"/>
-                <br />
-                <asp:TextBox runat="server" CssClass="input" type="text"/>
+                <asp:TextBox runat="server" ID="txtUser" CssClass="input" type="text"/>
                 
-                <br /> <br />
+                <br />
+                <br />
 
                 <asp:Label runat="server" Text="Email" />
+                <asp:TextBox runat="server" ID="txtEmail" CssClass="input" type="text" />
+
                 <br />
-                <asp:TextBox runat="server" CssClass="input" type="password" />
-                
-                <br /> <br />
+                <br />
 
                 <asp:Label Text="Senha" runat="server"/>
-                <br />
-                <asp:TextBox runat="server" CssClass="input" type="text"/>
+                <asp:TextBox runat="server" ID="txtPassword" CssClass="input" type="password"/>
                 
-                <br /> <br />
+                <br />
+                <br /> 
 
                 <asp:Label runat="server" Text="Confirmar Senha" />
-                <br />
                 <asp:TextBox runat="server" CssClass="input" type="password" /><br />
 
+                <asp:Label runat="server" ForeColor="Red" ID="msgerror" />
+
                 <div style="margin-top: 32px">
-                    <asp:Button type="submit" CssClass="button" Text="Login" runat="server" style="margin-right: 20px"/>
+                    <asp:Button CssClass="button" ID="btnRegister" OnClick="btnRegister_Click" Text="Cadastrar" runat="server" style="margin-right: 20px"/>
                     <asp:LinkButton runat="server"  CssClass="button" PostBackUrl="~/UI/Login.aspx" Text="Fazer Login"/>
                 </div>
                 <h3><asp:HyperLink runat="server" style="color:blue">Entrar com o Facebook</asp:HyperLink></h3>

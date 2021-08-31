@@ -16,9 +16,9 @@
      <form id="form1" runat="server">
 
         <aside class="sidebar">
-            <asp:HyperLink runat="server" class="sidebar-title" Text="DTALKS" NavigateUrl="#" />
+            <asp:HyperLink runat="server" class="sidebar-title" Text="DTALKS" NavigateUrl="~/UI/Home.aspx" />
 
-            <asp:HyperLink NavigateUrl="~/UI/Home.aspx" ImageUrl="~/ASSETS/ICONS/iconHome.svg" runat="server" style="margin-top: 77px" />
+            <asp:HyperLink NavigateUrl="~/UI/Home2.aspx" ImageUrl="~/ASSETS/ICONS/iconHome.svg" runat="server" style="margin-top: 77px" />
 
             <asp:HyperLink NavigateUrl="~/UI/Dashboard.aspx" ImageUrl="~/ASSETS/ICONS/iconVideos.svg" runat="server" style="margin-top: 49px"/>
 
@@ -49,7 +49,7 @@
                 <div class="container-main">
                     <asp:Label Text="PodCast" runat="server" class="container-title"/>
 
-                     <asp:TextBox runat="server" placeholder="Image link" ID="ImageInput" CssClass="container-input"/>
+                     <asp:TextBox runat="server" placeholder="Link YouTube" Text="https://youtu.be/DiXbJL3iWVs" ID="ImageInput" CssClass="container-input"/>
 
                     <asp:TextBox runat="server" placeholder="Tema" ID="ThemeInput" CssClass="container-input"/>
 
@@ -57,7 +57,10 @@
 
                     <asp:TextBox runat="server" placeholder="Título" ID="TitleInput" CssClass="container-input"/>
 
-                    <asp:Button Text="Criar Podcast" OnClick="btn_Click" ID="btn" runat="server" CssClass="container-button" />
+                    <asp:Label runat="server" ID="msgError" ForeColor="Red"/>
+
+                    <asp:Button Text="Criar Podcast" OnClick="btnCreate_Click" ID="btnCreate" runat="server" CssClass="container-button" />
+
                 </div>
             </main>
         </div>
