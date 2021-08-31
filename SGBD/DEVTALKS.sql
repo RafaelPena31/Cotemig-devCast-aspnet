@@ -27,10 +27,9 @@ CREATE TABLE IF NOT EXISTS `DEVTALKSBD`.`User` (
   `password` VARCHAR(45) NOT NULL,
   `isAdmin` TINYINT NOT NULL,
   `isCC` TINYINT NOT NULL,
-  `isPremium` TINYINT NOT NULL
-  PRIMARY KEY (`id`))
+  `isPremium` TINYINT NOT NULL,
+  PRIMARY KEY(`id`))
 ENGINE = InnoDB;
-
 
 -- -----------------------------------------------------
 -- Table `mydb`.`Channel`
@@ -62,27 +61,19 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `DEVTALKSBD`.`Podcast`
 -- -----------------------------------------------------
+
 CREATE TABLE IF NOT EXISTS `DEVTALKSBD`.`Podcast` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `title` VARCHAR(25) NOT NULL,
   `description` VARCHAR(250) NOT NULL,
-  `like` INT NOT NULL,
+  `likePod` INT NOT NULL,
   `dislike` INT NOT NULL,
   `path` VARCHAR(400) NOT NULL,
   `Channel_id` INT UNSIGNED NOT NULL,
   `Channel_User_id` INT NOT NULL,
-  `Theme_id` INT NOT NULL,
-  PRIMARY KEY (`id`, `Channel_id`, `Channel_User_id`, `Theme_id`),
-    FOREIGN KEY (`Channel_id` , `Channel_User_id`)
-    REFERENCES `DEVTALKSBD`.`Channel` (`id` , `User_id`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE,
-    FOREIGN KEY (`Theme_id`)
-    REFERENCES `DEVTALKSBD`.`Theme` (`id`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE)
+  `Theme` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`id`))
 ENGINE = InnoDB;
-
 
 -- -----------------------------------------------------
 -- Table `DEVTALKSBD`.`Ads`
@@ -100,7 +91,6 @@ CREATE TABLE IF NOT EXISTS `DEVTALKSBD`.`Ads` (
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB;
-
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
